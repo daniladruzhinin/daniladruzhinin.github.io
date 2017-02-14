@@ -1,7 +1,8 @@
 body{
-	height: 100vh;
+	height: 635px;
 	background-image: url(../img/main_bg.jpg);
 	background-position: center center;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
