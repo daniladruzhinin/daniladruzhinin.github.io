@@ -1,16 +1,13 @@
-body{
-	height: 614px;
-	background-image: url(../img/main_bg.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0;
-	padding: 0;
-
+.box{
+	border:2px solid #000;
+	height: 100px;
 }
-h1{
-	color: #000;
-	font-size: 90px;
-	padding-top: 200px;
-
+.in_basket{
+	height: 50px;
+	border: 2px dashed #000;
+	background-color: green;
+	margin-top: 25px;
+	padding-top: 10px;
+	font-size: 20px;
+	color:#fff;
 }
