@@ -1,0 +1,21 @@
+a{
+	text-decoration:none;
+}
+
+nav{
+	height: 50px;
+	background-color: #000;
+	position: fixed;
+	right: 0;
+	left: 0;
+}
+ul.list-inline a{
+	color:#fff;
+	display: inline-block;
+	padding-top: 15px;
+}
+section#text {
+	padding-top: 50px;	
+}
+
+
