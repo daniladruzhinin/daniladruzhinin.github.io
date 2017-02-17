@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans/OpenSansLight.eot');
+    src: url('../fonts/OpenSans/OpenSansLight.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansLight.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans/OpenSansRegular.eot');
+    src: url('../fonts/OpenSans/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/OpenSans/OpenSansSemiBold.eot');
+    src: url('../fonts/OpenSans/OpenSansSemiBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansSemiBold.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansSemiBold.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansSemiBold.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+}
+.main_head{
+	margin-top: 3%;
+}
+.main_logo_border {
+	width: 150px;
+	height: 55px;
+	border:3px solid #706b73;
+	border-radius: 3px;
+	line-height: 49px;
+}
+.main_logo_border p{
+	font-family: 'OpenSansSemiBold', sans-serif;
+	font-size: 37px;
+	color: #706b73;
+}
+.color_logo{
+	color: #fa9179;
+}
+.line_bar{
+	position: relative;
+	float: right;
+	margin-top: 25px;
+	width: 35px;
+}
+.line{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	width: 30px;
+	height: 4px;
+	right: 0;
+	top:50%;
+	background-color: #706b73;
+	position: absolute;
+	-webkit-transform: translateY(-2px) ;
+	-ms-transform:translateY(-2px) ;
+	-o-transform:translateY(-2px) ;
+	transform:translateY(-2px) ;
+}
+.line::before{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+		content: '';
+	display: inline-block;
+	width: 30px;
+	height: 4px;
+	right: 0;
+	top:50%;
+	position: absolute;
+	background-color: #706b73;
+	-webkit-transform: translateY(-8px) ;
+	-ms-transform:translateY(-8px) ;
+	-o-transform:translateY(-8px) ;
+	transform:translateY(-8px) ;
+}
+.line::after{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+		content: '';
+	display: inline-block;
+	width: 30px;
+	height: 4px;
+	right: 0;
+	top:50%;
+	position: absolute;
+	background-color: #706b73;
+	-webkit-transform: translateY(-14px) ;
+	-ms-transform:translateY(-14px) ;
+	-o-transform:translateY(-14px) ;
+	transform:translateY(-14px) ;
+}
