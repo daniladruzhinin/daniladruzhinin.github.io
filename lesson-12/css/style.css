@@ -16,7 +16,7 @@
 body {
   color: #6b6b6b;
   font-size: 14px;
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSansRegular', sans-serif;
   font-style: normal;
 }
 input:focus,
@@ -31,11 +31,11 @@ header {
 }
 /*------------------------------------font-family-------------------------*/
 .ops-reg {
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSansRegular', sans-serif;
   font-style: normal;
 }
 .ops-sbold {
-  font-family: 'OpenSansSemiBold';
+  font-family: 'OpenSansSemiBold', sans-serif;
   font-style: normal;
 }
 /*-------------------------------base color-------------------------------*/
@@ -52,7 +52,7 @@ header {
   line-height: 49px;
 }
 .main-logo-border p {
-  font-family: 'OpenSansSemiBold';
+  font-family: 'OpenSansSemiBold', sans-serif;
   font-style: normal;
   font-size: 37px;
 }
@@ -66,7 +66,7 @@ header {
   float: right;
 }
 .main-header h1 {
-  font-family: 'OpenSansSemiBold';
+  font-family: 'OpenSansSemiBold', sans-serif;
   font-style: normal;
   font-size: 45px;
   margin-top: 2%;
@@ -94,13 +94,13 @@ header {
   padding: 30px;
 }
 .main-form-header {
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSansRegular', sans-serif;
   font-style: normal;
   font-size: 20px;
 }
 .main-form-header span {
   color: #fc6f4e;
-  font-family: 'OpenSansSemiBold';
+  font-family: 'OpenSansSemiBold', sans-serif;
   font-style: normal;
 }
 .main-form input,
@@ -126,7 +126,7 @@ header {
   padding: 15px 45px;
   font-size: 16px;
   margin-top: 4%;
-  font-family: 'OpenSansRegular';
+  font-family: 'OpenSansRegular', sans-serif;
   font-style: normal;
   color: #ffffff;
 }
