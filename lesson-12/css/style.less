@@ -26,6 +26,8 @@
          url('../fonts/OpenSans/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
 }
 body{
+	margin: 0;
+	padding: 0;
 	color: @base-black;
 	font-size: 14px;
 	.ops-reg;
@@ -167,6 +169,10 @@ section{
 			margin-top: 4%;
 			.ops-reg;
 			color:@white;
+			&:hover{
+				-webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
+				box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
+			}
 		}
 	}
 }
@@ -304,7 +310,53 @@ section{
 	}
 	}
 }
-
+/*---------------------------Featured Works--------------------------*/
+.featured-box{
+	margin-top: 6%;
+	height: 360px;
+	position: relative;
+}
+.signature{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color:@white;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center; 
+	align-items: center;
+	-webkit-transition: opacity 0.4s ;
+	-o-transition: opacity 0.4s ;
+	transition: opacity 0.4s ;
+	&:hover{
+		opacity: 1;
+	}
+}
+.sign{
+	p{
+		.ops-sbold;
+		font-size: 22px;
+	}
+	button{
+		border: none;
+		.ops-sbold;
+		font-size: 16;
+		padding: 10px 35px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		background-color: @base-red; 
+	}
+}
 
 
 

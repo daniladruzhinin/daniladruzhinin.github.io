@@ -14,6 +14,8 @@
   src: url('../fonts/OpenSans/OpenSansSemiBold.eot') format('embedded-opentype'), url('../fonts/OpenSans/OpenSansSemiBold.woff2') format('woff2'), url('../fonts/OpenSans/OpenSansSemiBold.woff') format('woff'), url('../fonts/OpenSans/OpenSansSemiBold.ttf') format('truetype'), url('../fonts/OpenSans/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
 }
 body {
+  margin: 0;
+  padding: 0;
   color: #6b6b6b;
   font-size: 14px;
   font-family: 'OpenSansRegular', sans-serif;
@@ -151,6 +153,10 @@ section {
   font-style: normal;
   color: #ffffff;
 }
+.main-form-btn:hover {
+  -webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
+}
 .line {
   width: 30px;
   height: 4px;
@@ -281,4 +287,51 @@ section {
 }
 .box-lara i.fa-camera-retro {
   transform: rotate(-15deg);
+}
+/*---------------------------Featured Works--------------------------*/
+.featured-box {
+  margin-top: 6%;
+  height: 360px;
+  position: relative;
+}
+.signature {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transition: opacity 0.4s ;
+  -o-transition: opacity 0.4s ;
+  transition: opacity 0.4s ;
+}
+.signature:hover {
+  opacity: 1;
+}
+.sign p {
+  font-family: 'OpenSansSemiBold', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+}
+.sign button {
+  border: none;
+  font-family: 'OpenSansSemiBold', sans-serif;
+  font-style: normal;
+  font-size: 16;
+  padding: 10px 35px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #fc6f4e;
 }
