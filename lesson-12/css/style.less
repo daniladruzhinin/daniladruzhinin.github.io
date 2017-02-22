@@ -38,7 +38,7 @@ input, button, textarea{
 	}
 }
 header{
-	background:  url(../img/main-bg.jpg) no-repeat center center;
+	background:  url(../img/main-bg.jpg) no-repeat top center;
 	height: 100vh;
 	min-height: 634px;	
 }
@@ -357,6 +357,69 @@ section{
 		background-color: @base-red; 
 	}
 }
-
-
+/*---------------------Section services---------------------------------*/
+.services{
+	&-list{
+		list-style: none;
+			&-item{
+			margin-top: 3%;
+			text-align: center;
+			display: inline-block;
+			&:hover{
+				-webkit-box-shadow:0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+				box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+			}
+			a:focus{
+				display: inline-block;
+				-webkit-box-shadow:0px 0px 36px 0px rgba(252,111,78, 1);
+				box-shadow: 0px 0px 36px 0px rgba(252,111,78, 1);
+			}
+		}
+	}
+	&-info{
+		h4{
+			font-size: 30px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	&-line{
+		display: inline-block;
+		width: 60px;
+		height: 3px;
+		background-color:@base-red;
+		margin-bottom: 2%;
+		margin-top: 1%;
+	}
+	&-btn{
+		margin-top: 3%;
+		font-size: 16px;
+		background-color: @white;
+		color:@base-black;
+		padding:15px 55px;
+		border: 1px solid lighten(@base-black, 50%);
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		-webkit-box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.25);
+		box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.2);
+	}
+}
+.panel-default>.panel-heading{
+	.ops-sbold;
+	position: relative;
+	background-color: @white;
+	color:@base-red;
+	border: 1px solid @base-red;
+	&:hover{
+		background-color: @base-red;
+		color:@white;
+	}
+	a:focus, a:hover{
+		text-decoration: none;
+	}
+}
 
