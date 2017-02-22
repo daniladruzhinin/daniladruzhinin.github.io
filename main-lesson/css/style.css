@@ -50,7 +50,7 @@ header {
   padding-bottom: 4%;
 }
 section {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 /*------------------------------------font-family-------------------------*/
 .ops-reg {
@@ -385,7 +385,6 @@ section {
 .panel-default > .panel-heading {
   font-family: 'OpenSansSemiBold', sans-serif;
   font-style: normal;
-  position: relative;
   background-color: #ffffff;
   color: #fc6f4e;
   border: 1px solid #fc6f4e;
