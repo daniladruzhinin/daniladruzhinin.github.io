@@ -490,23 +490,28 @@ section{
 .arrow-left{
 	left: -25px;
 }
-.slick-dots li button{
-	width: 23px;
-	height: 5px;
-	background-color: @grey;
-	margin-top: 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
-	&:hover, &:focus{
-		background-color: @base-red;
-	}
-}
 .slick-dots li button:before{
-	content:'';
+	background-color: @grey;
+	width: 21px;
+	height: 7px;
+	color: transparent;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+	border-radius: 12px;
+	opacity: 0.5;
+	
 }
+.slick-dots li.slick-active button:before{
+	color: transparent;
+	background-color: @base-red;
+	opacity: 1;
+}
+.slick-dots{
+	bottom: -50px;
+}
+
 /*-----------------------Modal window----------------------------*/
 .modal-header{
 	border-bottom: none;
