@@ -269,7 +269,6 @@ section{
 		-o-border-radius: 50px;
 		border-radius: 50px;
 		position: absolute;
-		margin-top:10px;
 		left: 10%;
 		-webkit-box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
 		box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.05);
@@ -318,7 +317,7 @@ section{
 }
 /*---------------------------Featured Works--------------------------*/
 .featured-box{
-	margin-top: 6%;
+	margin-top: 3%;
 	height: 360px;
 	position: relative;
 }
@@ -724,3 +723,204 @@ Modal Window
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
+@media (min-width: 0px) and (max-width: 479px) {
+	.main{
+		&-header{
+			h1{
+				font-size: 22px;
+				margin-top: 10%;
+			}
+			p{
+				font-size: 14px;
+				padding:0;
+			}
+		}
+		&-form{
+			&-header{
+				font-size: 16px;
+			}
+			&-btn{
+				background-position: 122px 22px; 
+				display: block;
+				background-size: 14px;
+				font-size: 14px;
+				padding: 15px 25px;
+			}
+		}
+	}
+	.section-header{
+		h2{
+			font-size: 20px;
+		}
+		p{
+			font-size: 14px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.working{
+		&-box{
+			margin-bottom: 30%;
+			padding:10%;
+			padding-top: 20%;
+			padding-bottom: 10px;
+			h4{
+				font-size: 16px;
+			}
+			p{
+				font-size: 12px;
+			}
+		}
+		&-btn{
+			margin-top: -5%;
+		}
+	}
+	.featured{
+		&-box{
+			width: 330px;
+			height: 330px;
+			img{
+				width: 330px;
+				height: 330px;
+			}
+		}
+	}
+	.services{
+		&-list{
+			&-item{
+				img{
+					width: 80px;
+					
+				}
+			}
+		}
+		&-info{
+			img{
+				margin-top: 5%;
+			}
+		}
+	}
+.arrow-right{
+	right: -15px;
+	}
+.arrow-left{
+	left: -15px;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	.main{
+		&-header{
+			h1{
+				font-size: 30px;
+				margin-top: 5%;
+			}
+			p{
+				font-size: 16px;
+				padding-right:20px;
+				padding-left: 20px;
+			}
+		}
+		&-form{
+			&-header{
+				font-size: 24px;
+			}
+			&-btn{
+				font-size: 16px;
+				padding: 15px 40px;
+				padding-right: 45px;
+			}
+		}
+	}
+	.section-header{
+		h2{
+			font-size: 22px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+.working{
+		&-box{
+			margin-bottom: 30%;
+			padding:10%;
+			padding-top: 15%;
+		}
+		&-btn{
+			margin-top: 2%;
+		}
+	}
+	.featured{
+		&-box{
+			width: 330px;
+			height: 330px;
+			img{
+				width: 330px;
+				height: 330px;
+			}
+		}
+	}
+	.services{
+		&-list{
+			&-item{
+				img{
+					width: 75px;
+					
+				}
+			}
+		}
+	}	
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.main{
+		&-header{
+			h1{
+				font-size: 20px;
+				margin-top: 10%;
+			}
+			p{
+				font-size: 16px;
+				padding:0;
+			}
+		}
+		&-form{
+			&-header{
+				font-size: 20px;
+			}
+			&-btn{
+				font-size: 16px;
+				padding: 15px 40px;
+				padding-right: 45px;
+			}
+		}
+	}
+	.section-header{
+		h2{
+			font-size: 22px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.working{
+		&-box{
+			margin-bottom: 10%;
+			padding:10%;
+			padding-top: 15%;
+		}
+		&-btn{
+			margin-top: 2%;
+		}
+	}
+	.featured{
+		&-box{
+			width: 99%;
+			height: 104%;
+			img{
+				width: 450px;
+			}
+		}
+	}
+}
+
