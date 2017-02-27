@@ -777,11 +777,9 @@ Modal Window
 	}
 	.featured{
 		&-box{
-			width: 330px;
-			height: 330px;
+			height: 100%;
 			img{
-				width: 330px;
-				height: 330px;
+				width: 100%;
 			}
 		}
 	}
@@ -851,14 +849,9 @@ Modal Window
 	}
 	.featured{
 		&-box{
-			width: 330px;
-			height: 330px;
-			img{
-				width: 330px;
-				height: 330px;
-			}
+			width: 50%;
 		}
-	}
+	}	
 	.services{
 		&-list{
 			&-item{
@@ -893,6 +886,26 @@ Modal Window
 			}
 		}
 	}
+	.services{
+		&-list{
+			&-item{
+				img{
+					width: 75px;
+					
+				}
+			}
+		}
+	}
+	.working{
+		&-box{
+			margin-bottom: 15%;
+			padding:10%;
+			padding-top: 15%;
+		}
+		&-btn{
+			margin-top: 2%;
+		}
+	}
 	.section-header{
 		h2{
 			font-size: 22px;
@@ -901,7 +914,17 @@ Modal Window
 			font-size: 14px;
 		}
 	}
-}
+	.featured{
+		&-box{
+			width: 330px;
+			height: 330px;
+			img{
+				width: 330px;
+				height: 330px;
+			}
+		}
+	}	
+}	
 @media (min-width: 992px) and (max-width: 1199px){
 	.working{
 		&-box{

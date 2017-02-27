@@ -733,12 +733,10 @@ Modal Window
     margin-top: -5%;
   }
   .featured-box {
-    width: 330px;
-    height: 330px;
+    height: 100%;
   }
   .featured-box img {
-    width: 330px;
-    height: 330px;
+    width: 100%;
   }
   .services-list-item img {
     width: 80px;
@@ -786,12 +784,7 @@ Modal Window
     margin-top: 2%;
   }
   .featured-box {
-    width: 330px;
-    height: 330px;
-  }
-  .featured-box img {
-    width: 330px;
-    height: 330px;
+    width: 50%;
   }
   .services-list-item img {
     width: 75px;
@@ -814,11 +807,30 @@ Modal Window
     padding: 15px 40px;
     padding-right: 45px;
   }
+  .services-list-item img {
+    width: 75px;
+  }
+  .working-box {
+    margin-bottom: 15%;
+    padding: 10%;
+    padding-top: 15%;
+  }
+  .working-btn {
+    margin-top: 2%;
+  }
   .section-header h2 {
     font-size: 22px;
   }
   .section-header p {
     font-size: 14px;
+  }
+  .featured-box {
+    width: 330px;
+    height: 330px;
+  }
+  .featured-box img {
+    width: 330px;
+    height: 330px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
