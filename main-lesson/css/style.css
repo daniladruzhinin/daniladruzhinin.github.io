@@ -135,10 +135,6 @@ section {
   border-bottom: 1px solid #6b6b6b;
 }
 .main-form-btn {
-  background: url(../img/arrow.png) no-repeat;
-  background-position: 160px 22px;
-  display: block;
-  margin: 0 auto;
   border: none;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -146,7 +142,7 @@ section {
   -o-border-radius: 50px;
   border-radius: 50px;
   background-color: #fc5b35;
-  padding: 15px 45px;
+  padding: 15px 35px;
   font-size: 16px;
   margin-top: 4%;
   font-family: 'OpenSansRegular', sans-serif;
@@ -156,6 +152,10 @@ section {
 .main-form-btn:hover {
   -webkit-box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
   box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.1);
+}
+.main-form-btn i.fa {
+  vertical-align: middle;
+  width: 40px;
 }
 .color_logo {
   color: #fc8367;
@@ -692,22 +692,22 @@ Modal Window
 }
 @media (min-width: 0px) and (max-width: 479px) {
   .main-header h1 {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10%;
   }
   .main-header p {
-    font-size: 14px;
+    font-size: 12px;
     padding: 0;
   }
   .main-form-header {
-    font-size: 16px;
+    font-size: 14px;
   }
   .main-form-btn {
-    background-position: 122px 22px;
-    display: block;
-    background-size: 14px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 15px 25px;
+  }
+  .main-form-btn i.fa {
+    width: 30px;
   }
   .section-header h2 {
     font-size: 20px;
@@ -724,13 +724,14 @@ Modal Window
     padding-bottom: 10px;
   }
   .working-box h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .working-box p {
     font-size: 12px;
   }
   .working-btn {
     margin-top: -5%;
+    font-size: 12px;
   }
   .featured-box {
     height: 100%;
@@ -743,6 +744,9 @@ Modal Window
   }
   .services-info img {
     margin-top: 5%;
+  }
+  .services-btn {
+    margin-left: 10%;
   }
   .arrow-right {
     right: -15px;
@@ -770,7 +774,7 @@ Modal Window
   .main-form-btn {
     font-size: 16px;
     padding: 15px 40px;
-    padding-right: 45px;
+    padding-right: 30px;
   }
   .section-header h2 {
     font-size: 22px;
@@ -779,18 +783,21 @@ Modal Window
     font-size: 14px;
   }
   .working-box {
-    margin-bottom: 20%;
+    margin-bottom: 30%;
     padding: 10%;
     padding-top: 15%;
   }
   .working-btn {
-    margin-top: 2%;
+    margin-top: -2%;
   }
   .featured-box {
     width: 360px;
   }
   .services-list-item img {
     width: 75px;
+  }
+  .services-info img {
+    margin-top: 5%;
   }
   .arrow-right {
     right: -15px;
@@ -814,7 +821,7 @@ Modal Window
   .main-form-btn {
     font-size: 16px;
     padding: 15px 40px;
-    padding-right: 45px;
+    padding-right: 30px;
   }
   .services-list-item img {
     width: 75px;
