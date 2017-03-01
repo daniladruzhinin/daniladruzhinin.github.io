@@ -45,10 +45,10 @@
                 <p class="main-form-header"><span>Send</span> A Message</p>
               <form id="main-form-message" action="message.php">
               <input type="hidden" name="whatever" value="Главная форма">
-              <input type="text" name="username" placeholder="Your name">
-              <input type="email" name="useremail" placeholder="Your Email" >
-              <textarea rows="3" name="user_message" placeholder="Your Message"></textarea>
-              <button type="submit" class="main-form-btn">Send Message
+              <input id="username" type="text" name="username" placeholder="Your name">
+              <input id="useremail" type="email" name="useremail" placeholder="Your Email" >
+              <textarea rows="3" id="user_message" name="user_message" placeholder="Your Message"></textarea>
+              <button id="submit-btn" type="submit" class="main-form-btn">Send Message
               <i class="fa fa-long-arrow-right"></i>
               </button>
               </form> 
@@ -115,7 +115,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInLeft" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/1.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -126,7 +126,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInDown" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInDown" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/2.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -137,7 +137,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInRight" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInRight" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/3.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInLeft" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/4.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -159,7 +159,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeIn" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeIn" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/5.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -170,7 +170,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInRight" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInRight" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/6.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -181,7 +181,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInLeft" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/7.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -192,7 +192,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInUp" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInUp" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/8.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -203,7 +203,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-xs-12 col-sm-6">
-            <div class="featured-box wow fadeInRight" data-wow-delay="0.3s">
+            <div class="featured-box wow fadeInRight" data-wow-offset="100"data-wow-delay="0.3s">
               <img src="img/Featured/9.jpg" alt="Architecture">
               <div class="signature">
                 <div class="sign">
@@ -464,7 +464,7 @@
     	</div>
     </section>
     <!-- Подвал -->
-		<footer>
+		<footer id="contacts">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -490,6 +490,22 @@
 				       </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-know">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<!-- Modal Form -->
+			<div  id="modal-window" class="col-lg-12 text-center">
+				<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog " role="document">
+				    <div class="modal-content">
+				      <div class="modal-header text-center">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel"><span id="modal-form-name"></span>cпасибо за заявку!</h4>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-know" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -525,6 +541,19 @@
 		<a href="#0" class="modal-close">Close</a>
 	</div> <!-- cd-modal -->
 		<div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+
+		<div class="overlay-nav">
+		<span class="close-nav">&times;</span>
+			<ul>
+				<li> <a href="#main">Main</a> </li>
+				<li> <a href="#working">Working Process</a> </li>
+				<li> <a href="#featured">Featured Works</a> </li>
+				<li> <a href="#services">Services We Provide</a> </li>
+				<li> <a href="#FAQ">FAQ</a> </li>
+				<li> <a href="#feedback">Clients Said</a> </li>
+				<li> <a href="#contacts">Contacts</a> </li>
+			</ul>
+		</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -593,13 +622,42 @@
 					data: $(this).serialize()
 				}).done(function() {
 					$(this).find("input").val("");
-					alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+					alert("Спасибо за заявку! Рады вам помочь!");
 					$("#main-form-message").trigger("reset");
 				});
 				return false;
-			});
-			
+			});	
 		});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('#submit-btn').click(function(){
+					if ($('input#username').val()!== ''){
+						$('#main-form-message').submit();
+					} else {
+						alert('Пожалуйста заполните все поля!')
+					}
+					if ($('#useremail').val()!== ''){
+						$('#main-form-message').submit();
+					} else {
+						alert('Пожалуйста заполните все поля!')
+					}
+				});
+			});
+		</script>
+		<script>
+			$ (document).ready(function() {
+				var $nav= $('a.main-bar');
+				$nav.click(function () {
+					$('.overlay-nav').show(400);	
+				})
+				$('.close-nav').click(function(){
+					$('.overlay-nav').hide(400);
+				});
+				$('li').click(function(){
+					$('.overlay-nav').hide(400);
+				})
+			})
 		</script>
   </body>
 </html>

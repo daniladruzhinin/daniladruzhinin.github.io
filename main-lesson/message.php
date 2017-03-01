@@ -3,7 +3,7 @@
 $whatever=$_POST['whatever'];
 $username=$_POST['username'];
 $useremail=$_POST['useremail'];
-$user_nessage=$_POST['user_nessage'];
+$user_message=$_POST['user_message'];
 //Тут указываем на какой ящик посылать письмо
 $to = "drudanya@yandex.ru";
 //Далее идет тема и само сообщение
@@ -19,6 +19,6 @@ Email: ".htmlspecialchars($useremail)."<br />
 $headers = "From: daniladruzhinin.sl <drudanya@yandex.ru>\r\nContent-type: text/html; charset=UTF-8 \r\n";
 mail ($to, $subject, $message, $headers);
 // Перенаправляем человека на страницу благодарности и завершаем скрипт
-header('Location: thanks.html');
+header('Location : thanks.html')
 exit();
 ?>
