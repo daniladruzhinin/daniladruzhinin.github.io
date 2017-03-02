@@ -41,6 +41,7 @@ input, button, textarea{
 	}
 }
 header{
+	position: relative;
 	background:  url(../img/main-bg.jpg) no-repeat top center;
 	height: 100vh;
 	min-height: 634px;	
@@ -98,8 +99,8 @@ section{
 		text-align: center;
 		height: 55px;
 		width: 155px;
-		color: darken(@base-black, 5%);
-		border: 2px solid @base-black;
+		color: @white;
+		border: 2px solid @white;
 		line-height: 49px; 
 		p{
 			.ops-sbold;
@@ -113,10 +114,12 @@ section{
 		float: right;
 	}
 	&-header{
+		color: @white;
 		h1{
 			.ops-sbold;
 			font-size: 45px;
 			margin-top: 2%;
+			color: @white;
 		}
 		span{
 			color:@base-red;
@@ -186,7 +189,7 @@ section{
 	width: 30px;
 	height: 4px;
 	display: block;
-	background-color: @base-black;
+	background-color: @white;
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -200,7 +203,7 @@ section{
 	-o-transform: translateY(-2px);
 	transform: translateY(-2px);
 	&:before, &:after{
-		background-color: @base-black;
+		background-color: @white;
 		content: '';
 		display: inline-block;
 		position: relative;
@@ -226,6 +229,42 @@ section{
 		-o-transform: translateY(-26px);
 		transform: translateY(-26px);
 	}
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
 /*----------------------------Working Process------------------*/
 .working{	
@@ -540,6 +579,10 @@ section{
 	width: 400px;
 	
 }
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 /*----------------------------Footer-------------------------*/
 .footer{
 	&-contact{
@@ -771,14 +814,20 @@ Modal Window
 @media (min-width: 0px) and (max-width: 479px) {
 	.main{
 		&-header{
+			color: @base-black;
 			h1{
 				font-size: 20px;
 				margin-top: 10%;
+				color: @base-black;
 			}
 			p{
 				font-size: 12px;
 				padding:0;
 			}
+		}
+		&-logo-border{
+			color: @base-black;
+			border-color: @base-black;
 		}
 		&-form{
 			&-header{
@@ -792,6 +841,15 @@ Modal Window
 				padding: 15px 25px;
 			}
 		}
+	}
+	.line{
+		background-color: @base-black;
+			&:before, &:after{
+			background-color: @base-black;
+		}
+	}
+	.video-container{
+		display: none;
 	}
 	.section-header{
 		h2{
@@ -856,19 +914,30 @@ Modal Window
 .modal-dialog{
 	width: 95%;
 	}
+	.parallax-window {
+    min-height: 100px;
+    background: transparent;
+	}
 }
 @media (min-width: 480px) and (max-width: 767px){
 	.main{
 		&-header{
+			color: @base-black;
 			h1{
 				font-size: 30px;
 				margin-top: 5%;
+				color: @base-black;
 			}
 			p{
 				font-size: 16px;
 				padding-right:20px;
 				padding-left: 20px;
+				color: @base-black;
 			}
+		}
+		&-logo-border{
+			color: @base-black;
+			border-color: @base-black;
 		}
 		&-form{
 			&-header{
@@ -880,6 +949,15 @@ Modal Window
 				padding-right: 30px;
 			}
 		}
+	}
+	.line{
+		background-color: @base-black;
+			&:before, &:after{
+			background-color: @base-black;
+		}
+	}
+	.video-container{
+		display: none;
 	}
 	.section-header{
 		h2{
@@ -924,19 +1002,30 @@ Modal Window
 	}
 .arrow-left{
 	left: -15px;
+	}
+	.parallax-window {
+    min-height: 250px;
+    background: transparent;
 	}	
 }
 @media (min-width: 768px) and (max-width: 991px){
 	.main{
 		&-header{
+			color: @base-black;
 			h1{
 				font-size: 28px;
 				margin-top: 7%;
+				color: @base-black;
 			}
 			p{
 				font-size: 16px;
 				padding:0;
+				color: @base-black;
 			}
+		}
+		&-logo-border{
+			color: @base-black;
+			border-color: @base-black;
 		}
 		&-form{
 			&-header{
@@ -948,6 +1037,15 @@ Modal Window
 				padding-right: 30px;
 			}
 		}
+	}
+	.line{
+		background-color: @base-black;
+			&:before, &:after{
+			background-color: @base-black;
+		}
+	}
+	.video-container{
+		display: none;
 	}
 	.services{
 		&-list{
@@ -986,6 +1084,10 @@ Modal Window
 				height: 330px;
 			}
 		}
+	}
+	.parallax-window {
+    min-height: 300px;
+    background: transparent;
 	}	
 }	
 @media (min-width: 992px) and (max-width: 1199px){
