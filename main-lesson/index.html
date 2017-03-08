@@ -290,7 +290,89 @@
       </div>
     </section>
     <section class="parallax-window" data-parallax="scroll" data-image-src="img/scroll-3.jpg" id="scrolling"></section>
-    <!--секция часто задаваемых вопросов-->
+		<!-- Скилл и уровни команды -->
+		<section id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row section-header">
+							<h2><span>Team</span> Chinen & Skills</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</p>
+						</div>
+					</div>
+				</div>
+					<div class="col-xs-12 col-md-4 text-center">
+						<div class="chinen text-center ">
+								<img class="chinen-icons" src="img/team-icons/team-foto-1.jpg" alt="девушка">
+							<div id="team1" class="team">
+									<div class="skills">
+										<p>UI/UX Parena</p>
+										<span class="skill-1"></span><span class="skill-4"></span>
+										<p>English</p>
+										<span class="skill-2"></span><span class="skill-5"></span>
+										<p>Communication</p>
+										<span class="skill-3"></span><span class="skill-6"></span>
+										<h3>Bedi Manos</h3>
+										<p class="prof">UI/UX Parena</p>
+										<a href="#"><img src="img/team-icons/twitter.png" alt="twitter"></a>
+										<a href="#"><img src="img/team-icons/fbook.png" alt="facebook"></a>
+									</div>
+							</div>
+							<div id="chinen-name1" class="chinen-name">
+								<h3>Bedi Manos</h3>
+								<p>UI/UX Parena</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 text-center">
+						<div class="chinen text-center ">
+								<img class="chinen-icons" src="img/team-icons/team-foto-2.jpg" alt="дизайнер">
+							<div id="team2" class="team">
+									<div class="skills">
+										<p>UI/UX Designer</p>
+										<span class="skill-2"></span><span class="skill-5"></span>
+										<p>English</p>
+										<span class="skill-3"></span><span class="skill-6"></span>
+										<p>Communication</p>
+										<span class="skill-1"></span><span class="skill-4"></span>
+										<h3>Al Rayhan</h3>
+										<p class="prof">UI/UX Designer</p>
+										<a href="#"><img src="img/team-icons/twitter.png" alt="twitter"></a>
+										<a href="#"><img src="img/team-icons/fbook.png" alt="facebook"></a>
+									</div>
+							</div>
+							<div id="chinen-name2" class="chinen-name">
+								<h3>Al Rayhan</h3>
+								<p>UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 text-center">
+						<div class="chinen text-center ">
+								<img class="chinen-icons" src="img/team-icons/team-foto-3.jpg" alt="парень в красном">
+							<div id="team3" class="team">
+									<div class="skills">
+										<p>UI/UX Designer</p>
+										<span class="skill-3"></span><span class="skill-6"></span>
+										<p>English</p>
+										<span class="skill-1"></span><span class="skill-4"></span>
+										<p>Communication</p>
+										<span class="skill-2"></span><span class="skill-5"></span>
+										<h3>Ali Sayed</h3>
+										<p class="prof">UI/UX Designer</p>
+										<a href="#"><img src="img/team-icons/twitter.png" alt="twitter"></a>
+										<a href="#"><img src="img/team-icons/fbook.png" alt="facebook"></a>
+									</div>
+							</div>
+							<div id="chinen-name3" class="chinen-name">
+								<h3>Ali Sayed</h3>
+								<p>UI/UX Designer</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+    <!-- секция часто задаваемых вопросов -->
     <section id="FAQ"> 
       <div class="container">
         <div class="row">
@@ -651,18 +733,18 @@
 					if ($('input#username').val()!== ''){
 						$('#main-form-message').submit();
 					} else {
-						alert('Пожалуйста заполните все поля!')
+						alert('Пожалуйста, заполните все поля!')
 					}
-					if ($('#useremail').val()!== ''){
+					if ($('input#useremail').val()!== ''){
 						$('#main-form-message').submit();
 					} else {
-						alert('Пожалуйста заполните все поля!')
+						alert('Пожалуйста, заполните все поля!')
 					}
 				});
 			});
 		</script>
 		<script>
-			$ (document).ready(function() {
+			$(document).ready(function() {
 				var $nav= $('a.main-bar');
 				$nav.click(function () {
 					$('.overlay-nav').show(400);	
@@ -737,6 +819,28 @@
 
 			    });
 			}
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('#team1').mouseenter(function(){
+					$('#chinen-name1').hide();
+					$('#team1').mouseleave(function(){
+					$('#chinen-name1').show();
+				});
+				});
+				$('#team2').mouseenter(function(){
+					$('#chinen-name2').hide();
+					$('#team2').mouseleave(function(){
+					$('#chinen-name2').show();
+				});
+				});
+				$('#team3').mouseenter(function(){
+					$('#chinen-name3').hide();
+					$('#team3').mouseleave(function(){
+					$('#chinen-name3').show();
+				});
+				});
+			});
 		</script>
 		<script src="js/parallax.min.js" ></script>
   </body>

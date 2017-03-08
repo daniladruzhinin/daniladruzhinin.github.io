@@ -90,6 +90,7 @@ section{
 @yellow: #ffef3b;
 @grey:#c0c0c0;
 @footer-grey:#f7f7f7;
+@team:#fff3f0;
 .main{
 	&-head{
 		margin-top: 2%;
@@ -354,7 +355,7 @@ section{
 	}
 	}
 }
-/*---------------------------Featured Works--------------------------*/
+/*---------------------------Featured Works-------------------*/
 .featured-box{
 	margin-top: 3%;
 	height: 360px;
@@ -401,7 +402,7 @@ section{
 		background-color: @base-red; 
 	}
 }
-/*---------------------Section services---------------------------------*/
+/*---------------------Section services-------------------------*/
 .services{
 	&-list{
 		list-style: none;
@@ -465,7 +466,115 @@ section{
 		text-decoration: none;
 	}
 }
-/* ---------------------------Section Feedback-------------------------- */
+/*----------------------------Section team--------------------*/
+.chinen{
+	position: relative;
+	width: 360px;
+	height: 445px;
+	text-align: center;
+	margin-bottom: 5%;
+	&-name{
+		position: absolute;
+		background-color: @white;
+		width: 70%;
+		padding: 10px;
+		border:none;
+		bottom:-10%;
+		left: 15%;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.1);
+		box-shadow: 0px 0px 14px 0px rgba(20, 20, 21, 0.1);
+	}
+}
+.team{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(255, 243, 240, 0.9);
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center; 
+	align-items: center;
+	-webkit-transition: opacity 0.7s ;
+	-o-transition: opacity 0.7s ;
+	transition: opacity 0.7s ;
+	&:hover{
+		opacity: 1;
+		box-shadow: 0px 0px 49px 0px rgba(20, 20, 21, 0.2);
+	}
+}
+.skills{
+	margin-top: 45%;
+	img{
+		margin-top: 5%;
+		margin-right: 5%;
+	}
+	span.skill-1{
+		width: 150px;
+		height: 4px;
+		background-color: @base-red;
+		display: inline-block;
+		border-radius: 20px 0 0 20px;
+	}
+	span.skill-4{
+		width: 30px;
+		height: 4px;
+		background-color: @base-black;
+		display: inline-block;
+		border-radius: 0 20px 20px 0;
+	}span.skill-2{
+		width: 130px;
+		height: 4px;
+		background-color: @base-red;
+		display: inline-block;
+		border-radius: 20px 0 0 20px;
+	}
+	span.skill-5{
+		width: 50px;
+		height: 4px;
+		background-color: @base-black;
+		display: inline-block;
+		border-radius: 0 20px 20px 0;
+	}span.skill-3{
+		width: 140px;
+		height: 4px;
+		background-color: @base-red;
+		display: inline-block;
+		border-radius: 20px 0 0 20px;
+	}
+	span.skill-6{
+		width: 40px;
+		height: 4px;
+		background-color: @base-black;
+		display: inline-block;
+		border-radius: 0 20px 20px 0;
+	}
+	h3{
+		margin-top: 10%;
+	}
+	p{
+		font-size: 12px;
+		margin: 0;
+		margin-top: 5%;
+		.ops-sbold;
+	}
+	.prof{
+		font-size: 14px;
+		color:@base-red;
+	}
+	h3{
+		.ops-sbold;
+		font-size: 30px;
+	}
+}
+/* ---------------------------Section Feedback-------------- */
 .feedback{
 	&-box{
 		font-size: 17px;
@@ -918,6 +1027,20 @@ Modal Window
     min-height: 100px;
     background: transparent;
 	}
+.chinen{
+		width: 250px;
+		height: 100%;
+		margin-bottom: 20%;
+		&-icons{
+			width: 250px;
+		}
+	}
+	.team{
+		width: 100%;
+	}
+	.skills{
+		margin-top: 20%;
+	}	
 }
 @media (min-width: 480px) and (max-width: 767px){
 	.main{
@@ -1006,6 +1129,9 @@ Modal Window
 	.parallax-window {
     min-height: 250px;
     background: transparent;
+	}
+	.chinen{
+		margin-bottom: 20%;
 	}	
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -1089,6 +1215,9 @@ Modal Window
     min-height: 300px;
     background: transparent;
 	}	
+	.chinen{
+		margin-bottom: 10%;
+	}
 }	
 @media (min-width: 992px) and (max-width: 1199px){
 	.working{
