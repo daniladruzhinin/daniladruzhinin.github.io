@@ -442,6 +442,7 @@ section {
 }
 /*----------------------------Section team--------------------*/
 .chinen {
+  display: inline-block;
   position: relative;
   width: 360px;
   height: 445px;
@@ -555,7 +556,7 @@ section {
 /* ---------------------------Section Feedback-------------- */
 .feedback-box {
   font-size: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 .feedback-box p {
   margin-top: 15px;
@@ -632,7 +633,7 @@ section {
   opacity: 1;
 }
 .slick-dots {
-  bottom: -50px;
+  bottom: -15%;
 }
 /*-----------------------Modal window----------------------------*/
 .modal-header {
@@ -668,6 +669,16 @@ section {
   min-height: 400px;
   background: transparent;
 }
+/*--------------------------Partners-----------------------*/
+section#partners {
+  background: #fbfbfb;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  margin: 0;
+}
+section#partners img {
+  margin-top: 6%;
+}
 /*----------------------------Footer-------------------------*/
 .footer-contact-btn {
   background-color: #ffffff;
@@ -691,10 +702,43 @@ section {
   text-decoration: none;
   color: #6b6b6b;
 }
+.footer-social {
+  height: 100px;
+  margin-top: 7%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+}
+.footer-social i.fa {
+  margin-right: 2%;
+  padding-top: 2%;
+  background-color: #ababab;
+  color: #ffffff;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+}
+.footer-social i.fa:hover {
+  background-color: #fc6f4e;
+  box-shadow: 0px 0px 23px 0px rgba(20, 20, 21, 0.29);
+  -webkit-transition: opacity 0.4s ;
+  -o-transition: opacity 0.4s ;
+  transition: opacity 0.4s ;
+}
+.footer-social p {
+  color: #919191;
+  font-size: 18px;
+  display: inline-block;
+}
 footer {
+  margin: 0;
   background: #f7f7f7;
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding-top: 4%;
+  padding-bottom: 3%;
 }
 /*-----------------------Modal SVG---------------------------------*/
 svg {
@@ -992,6 +1036,24 @@ Modal Window
   .skills {
     margin-top: 20%;
   }
+  section#feedback {
+    margin-bottom: 15%;
+  }
+  section#partners {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  footer {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .footer-contact {
+    margin-bottom: 7%;
+  }
+  .footer-social i.fa {
+    padding-top: 6%;
+    margin-bottom: 5%;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .main-header {
@@ -1065,6 +1127,24 @@ Modal Window
   }
   .chinen {
     margin-bottom: 20%;
+  }
+  section#feedback {
+    margin-bottom: 15%;
+  }
+  section#partners {
+    padding-top: 5%;
+    padding-bottom: 8%;
+  }
+  footer {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .footer-contact {
+    margin-bottom: 7%;
+  }
+  .footer-social i.fa {
+    padding-top: 4%;
+    margin-bottom: 5%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
