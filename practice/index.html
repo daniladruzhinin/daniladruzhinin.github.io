@@ -24,42 +24,42 @@
 	<header id="main-head">
 		<div class="container">
 			<div class="row main-nav text-center">
-				<div class="col-md-5">
+				<div class="col-xs-5 col-md-5">
 					<div class="row header-nav header-home">
 						<nav>
 							<ul>
-								<li> <a href="#">Главная</a> </li>
-								<li> <a href="#">О нас</a> </li>
-								<li> <a href="#">Команда</a> </li>
+								<li> <a href="#main-head">Главная</a> </li>
+								<li> <a href="#works">О нас</a> </li>
+								<li> <a href="#team">Команда</a> </li>
 							</ul>
 						</nav>
 					</div>
 				</div> <!-- /col5 -->
-				<div class="col-md-2 line-logo text-center">
+				<div class="col-xs-2 col-md-2 line-logo text-center">
 					<div class="row logo">
-						<p>D</p>
+						<p><a href="#main-head">D</a></p>
 					</div>
 				</div> <!-- /col-2 -->
-				<div class="col-md-5">
+				<div class="col-xs-5 col-md-5">
 					<div class="row header-nav header-blog">
 						<nav>
 							<ul>
-								<li> <a href="#">Услуги</a> </li>
-								<li> <a href="#">Блог</a> </li>
-								<li> <a href="#">Контакты</a> </li>
+								<li> <a href="#wrapper">Услуги</a> </li>
+								<li> <a href="#" data-toggle="modal" data-target="#know-more-1">Блог</a> </li>
+								<li> <a href="#contact">Контакты</a> </li>
 							</ul>
 						</nav>
 					</div>
 				</div> <!-- /col5 -->
 			</div> <!-- /main-nav -->
 			<div class="row">
-				<div class="col-md-12 text-center">
+				<div class="col-xs-12 text-center">
 					<div class="row main-header">
 						<h1>Делать сайты - наша страсть</h1>
 						<p><i>Поясню, мы делаем это для развлечения, не для вас, шучу</i></p>
 					</div>
 					<div class="row">
-						<button id="submit-btn" type="submit" class="main-btn">Узнать больше
+						<button id="submit-btn" type="submit" class="main-btn" data-toggle="modal" data-target="#know-more-1">Узнать больше
 	          </button>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 		</div>
 	</header>
 	<!-- Section works -->
-	<section id="works">
+	<section id="works" class="works_section">
 		<div class="container">
 			<div class="row works">
 				<div class="row">
@@ -141,13 +141,13 @@
 			</div>
 		</div>
 	</section>
-	<section id="city">
+	<section id="city" class="city">
 		<div class="row city-bg">
 				<img src="img/city/black.png" alt="black-city">
 				<img src="img/city/white.png" alt="white-city">
 		</div>
 	</section>
-	<section id="team">
+	<section id="team" class="team_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -158,41 +158,45 @@
 				</div>
 			</div>
 			<div class="row team">
-				<div class="col-md-2 col-md-offset-1">
-					<div class="team-maxim">
-						<img class="img-responsiv img-circle center-block" src="img/team/max.jpg" alt="Max">
-						<h4>Максим Горбунов</h4>
-						<p>UI/UX Designer</p>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-vk" ></i></a>
+				<div class="col-xs-12 col-xs-offset-0 col-md-2 col-md-offset-1">
+					<div class="row">
+						<div class="team-maxim">
+							<img class="img-responsiv img-circle center-block" src="img/team/max.jpg" alt="Max">
+							<h4>Максим Горбунов</h4>
+							<p>UI/UX Designer</p>
+							<a href="https://vk.com/id53862323" target="_blank"><i class="fa fa-vk" ></i></a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-2 col-md-offset-2">
-					<div class="team-danya">
-						<img class="img-responsiv img-circle center-block" src="img/team/danya.jpg" alt="Danya">
-						<h4>Данила Дружинин</h4>
-						<p> Front-End Developer</p>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-vk"></i></a>
+				<div class="col-xs-12 col-xs-offset-0 col-md-2 col-md-offset-2">
+					<div class="row">
+						<div class="team-danya">
+							<img class="img-responsiv img-circle center-block" src="img/team/danya.jpg" alt="Danya">
+							<h4>Данила Дружинин</h4>
+							<p> Front-End Developer</p>
+							<a href="https://www.instagram.com/dan__druzhinin/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="https://vk.com/danila.druzhinin" target="_blank"><i class="fa fa-vk"></i></a>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-2 col-md-offset-2">
-					<div class="team-andrei">
-						<img class="img-responsiv img-circle center-block" src="img/team/andrei.jpg" alt="Andrei">
-						<h4>Андрей Зеленков</h4>
-						<p>Video Editor</p>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-vk"></i></a>
+				<div class="col-xs-12 col-xs-offset-0 col-md-2 col-md-offset-2">
+					<div class="row">
+						<div class="team-andrei">
+							<img class="img-responsiv img-circle center-block" src="img/team/andrei.jpg" alt="Andrei">
+							<h4>Андрей Зеленков</h4>
+							<p>Video Editor</p>
+							<a href="https://vk.com/zelenkov95" target="_blank"><i class="fa fa-vk"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="wrapper">
+	<section id="wrapper" class="wrapper_section">
 		<div class="container wrapper">
 			<div class="row se-slope">
 				<div class="col-xs-12 se-content">
-					<div class="row provide-header ">
+					<div class="row provide-header text-center">
 							<h3>Мы сделаем для вас все</h3>
 							<p><i>Может быть и не все, но cделаем многое.</i></p>
 					</div>
@@ -207,19 +211,21 @@
 					<div class="row provide-love">
 						<i class="fa fa-heart "></i>
 						<h4>Сделаем все с любовью</h4>
-						<button type="submit" class="provide-btn">Наш блог</button>
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 se-content">
-					<div class="row provide-cloud">
+					<div class="row provide-cloud text-center">
 						<i class="fa fa-cloud-upload"></i>
 						<h4> И предоставим облако</h4>
 					</div>
 				</div>
+					<div class="row text-center">
+						<button type="submit" class="provide-btn se-content" data-toggle="modal" data-target="#know-more-1">Наш блог</button>
+					</div>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="contact" class="contact_section">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -232,14 +238,14 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="row contact ">
-						<div class="col-xs-12 col-md-3">
+						<div class="col-xs-12 col-md-3 contact-number">
 							<div class="contact-phone">
 								<i class="fa fa-phone"></i>
-								<a href="tel:+7 (913) 448 76 96"> +7-(913)-448-76-96</a>
+								<a href="tel:+79134487696"> +7-(913)-448-76-96</a>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-6">
-							<div class="contact-addres">
+						<div class="col-xs-12 col-md-6 contact-marker">
+							<div class="contact-addres ">
 								<i class="fa fa-map-marker"></i>
 							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					        <div class="panel panel-default">
@@ -262,7 +268,7 @@
 					      </div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-md-3">
+						<div class="col-xs-12 col-md-3 contact-envelope">
 							<div class="contact-map">
 								<i class="fa fa-envelope"></i>
 								<p>drudanya@yandex.ru</p>
@@ -274,14 +280,14 @@
 			<div class="row">
         <div class="col-xs-12 ">
           <div class="main-form">
-            <form id="main-form-message" action="#" method="POST">
+            <form id="main-form-ajax" action="smart.php" method="POST">
             <input type="hidden" name="whatever" value="Главная форма">
-            <input id="username" type="text" name="username" placeholder="Ваше имя">
-            <input id="useremail" type="email" name="useremail" placeholder="Ваш Email" >
+            <input id="username" class="empty_field rfield" type="text" name="username" placeholder="Ваше имя">
+            <input id="useremail" class="empty_field rfield" type="email" name="useremail" placeholder="Ваш Email" >
             <textarea rows="10" id="user_message" name="user_message" placeholder="Введите ваше сообщение..."></textarea>
-            </form> 
-            <button id="submit-btn" type="submit" class="main-form-btn">Отправить
+            <button id="submit-form" type="submit" class="main-form-btn">Отправить
             </button>
+            </form> 
           </div>
         </div>
       </div>
@@ -291,7 +297,27 @@
 				<p>Copyright © Danila Druzhinin. All rights reserved.</p>
 			</div>
 		</div>
-	</footer>		
+	</footer>
+	<!-- Modal Know More -->
+			<div class="col-xs-12 text-center">
+				<div class="modal fade" id="know-more-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header text-center">
+				        <h4 class="modal-title" id="myModalLabel">Уважаемый гость!</h4>
+				      </div>
+				      <div class="modal-body">
+				      <p>К большому сожалению, наш блог еще находится в разработке. <br>
+				      В скором времени мы его запустим. <br>
+				      Приносим свои извинения...</p>
+				       </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-sorry" data-dismiss="modal">Принять извинения</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>		
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -300,5 +326,66 @@
     <script>
 			new WOW().init();
 		</script>
+		<!-- <script>
+	(function( $ ){
+	$(function() {
+	  $('#main-form-ajax').each(function(){
+	    // Объявляем переменные (форма и кнопка отправки)
+		var form = $(this),
+	        btn = form.find('#submit-form');
+	    // Добавляем каждому проверяемому полю, указание что поле пустое
+		form.find('.rfield').addClass('empty_field');
+	    // Функция проверки полей формы
+	    function checkInput(){
+	      form.find('.rfield').each(function(){
+	        if($(this).val() != ''){+
+	          // Если поле не пустое удаляем класс-указание
+			$(this).removeClass('empty_field');
+	        } else {
+	          // Если поле пустое добавляем класс-указание
+			$(this).addClass('empty_field');
+	        }
+	      });
+	    }
+	    // Функция подсветки незаполненных полей
+	    function lightEmpty(){
+	      form.find('.empty_field').css({'border-color':'#d8512d'});
+	      // Через полсекунды удаляем подсветку
+	      setTimeout(function(){
+	        form.find('.empty_field').removeAttr('style');
+	      },1000);
+	    }
+	    // Проверка в режиме реального времени
+	    setInterval(function(){
+	      // Запускаем функцию проверки полей на заполненность
+		  checkInput();
+	      // Считаем к-во незаполненных полей
+	      var sizeEmpty = form.find('.empty_field').size();
+	      // Вешаем условие-тригер на кнопку отправки формы
+	      if(sizeEmpty > 0){
+	        if(btn.hasClass('disabled')){
+	          return false
+	        } else {
+	          btn.addClass('disabled')
+	        }
+	      } else {
+	        btn.removeClass('disabled')
+	      }
+	    },500);
+	    // Событие клика по кнопке отправить
+	    btn.click(function(){
+	      if($(this).hasClass('disabled')){
+	        // подсвечиваем незаполненные поля и форму не отправляем, если есть незаполненные поля
+			lightEmpty();
+	        return false
+	      } else {
+	        // Все хорошо, все заполнено, отправляем форму
+	        form.submit();
+	      }
+	    });
+	  });
+	});
+	})( jQuery );
+</script> -->
 </body>
 </html>
